@@ -1,0 +1,9 @@
+[Unit]
+Description=PWM fan controller for the Raspberry PI 4
+
+[Service]
+Type=simple
+ExecStart=@FANCTRL_EXECUTABLE@
+
+[Install]
+WantedBy=multi-user.target
